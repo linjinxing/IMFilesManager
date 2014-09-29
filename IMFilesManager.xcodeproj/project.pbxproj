@@ -13,18 +13,25 @@
 		F85E04AF19D9421600428DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85E04AD19D9421600428DA4 /* Main.storyboard */; };
 		F85E04B119D9421600428DA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85E04B019D9421600428DA4 /* Images.xcassets */; };
 		F85E04B419D9421600428DA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85E04B219D9421600428DA4 /* LaunchScreen.xib */; };
-		F85E04C019D9421600428DA4 /* IMFilesManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F85E04BF19D9421600428DA4 /* IMFilesManagerTests.m */; };
+		F85E04D519D9458C00428DA4 /* IMFilesManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F85E04D419D9458C00428DA4 /* IMFilesManager.h */; };
+		F85E04D719D9458C00428DA4 /* IMFilesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F85E04D619D9458C00428DA4 /* IMFilesManager.m */; };
+		F85E04F219D9489800428DA4 /* IMNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F85E04F119D9489800428DA4 /* IMNode.m */; };
+		F85E04F519D948CD00428DA4 /* IMFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F85E04F419D948CD00428DA4 /* IMFile.m */; };
+		F85E04F819D948E100428DA4 /* IMDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = F85E04F719D948E100428DA4 /* IMDirectory.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F85E04BA19D9421600428DA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F85E049819D9421600428DA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F85E049F19D9421600428DA4;
-			remoteInfo = IMFilesManager;
+/* Begin PBXCopyFilesBuildPhase section */
+		F85E04D019D9458C00428DA4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F85E04D519D9458C00428DA4 /* IMFilesManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F85E04A019D9421600428DA4 /* IMFilesManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMFilesManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,9 +44,24 @@
 		F85E04AE19D9421600428DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F85E04B019D9421600428DA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F85E04B319D9421600428DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F85E04B919D9421600428DA4 /* IMFilesManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMFilesManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85E04BE19D9421600428DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F85E04BF19D9421600428DA4 /* IMFilesManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMFilesManagerTests.m; sourceTree = "<group>"; };
+		F85E04D219D9458C00428DA4 /* libIMFilesManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIMFilesManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85E04D419D9458C00428DA4 /* IMFilesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMFilesManager.h; sourceTree = "<group>"; };
+		F85E04D619D9458C00428DA4 /* IMFilesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMFilesManager.m; sourceTree = "<group>"; };
+		F85E04ED19D9464D00428DA4 /* IMNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNodeProtocol.h; sourceTree = "<group>"; };
+		F85E04EE19D9465D00428DA4 /* IMDirectoryNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMDirectoryNodeProtocol.h; sourceTree = "<group>"; };
+		F85E04EF19D9466600428DA4 /* IMFileNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMFileNodeProtocol.h; sourceTree = "<group>"; };
+		F85E04F019D9489800428DA4 /* IMNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNode.h; sourceTree = "<group>"; };
+		F85E04F119D9489800428DA4 /* IMNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMNode.m; sourceTree = "<group>"; };
+		F85E04F319D948CD00428DA4 /* IMFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMFile.h; sourceTree = "<group>"; };
+		F85E04F419D948CD00428DA4 /* IMFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMFile.m; sourceTree = "<group>"; };
+		F85E04F619D948E100428DA4 /* IMDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMDirectory.h; sourceTree = "<group>"; };
+		F85E04F719D948E100428DA4 /* IMDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMDirectory.m; sourceTree = "<group>"; };
+		F85E04F919D94A0B00428DA4 /* IMNodeRenameProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNodeRenameProtocol.h; sourceTree = "<group>"; };
+		F85E04FA19D94A1900428DA4 /* IMNodeDeleteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNodeDeleteProtocol.h; sourceTree = "<group>"; };
+		F85E04FB19D94A2A00428DA4 /* IMNodeMoveProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNodeMoveProtocol.h; sourceTree = "<group>"; };
+		F85E04FC19D94A4600428DA4 /* IMNodeCopyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNodeCopyProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +72,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F85E04B619D9421600428DA4 /* Frameworks */ = {
+		F85E04CF19D9458C00428DA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,8 +85,10 @@
 		F85E049719D9421600428DA4 = {
 			isa = PBXGroup;
 			children = (
+				F85E04E619D945C500428DA4 /* src */,
 				F85E04A219D9421600428DA4 /* IMFilesManager */,
 				F85E04BC19D9421600428DA4 /* IMFilesManagerTests */,
+				F85E04D319D9458C00428DA4 /* IMFilesManager */,
 				F85E04A119D9421600428DA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F85E04A019D9421600428DA4 /* IMFilesManager.app */,
-				F85E04B919D9421600428DA4 /* IMFilesManagerTests.xctest */,
+				F85E04D219D9458C00428DA4 /* libIMFilesManager.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,12 +143,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F85E04D319D9458C00428DA4 /* IMFilesManager */ = {
+			isa = PBXGroup;
+			children = (
+				F85E04D419D9458C00428DA4 /* IMFilesManager.h */,
+				F85E04D619D9458C00428DA4 /* IMFilesManager.m */,
+			);
+			path = IMFilesManager;
+			sourceTree = "<group>";
+		};
+		F85E04E619D945C500428DA4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F85E04E719D945C500428DA4 /* Common */,
+				F85E04E819D945C500428DA4 /* Model */,
+				F85E04E919D945C500428DA4 /* View */,
+				F85E04EA19D945C500428DA4 /* ViewController */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F85E04E719D945C500428DA4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F85E04ED19D9464D00428DA4 /* IMNodeProtocol.h */,
+				F85E04EE19D9465D00428DA4 /* IMDirectoryNodeProtocol.h */,
+				F85E04EF19D9466600428DA4 /* IMFileNodeProtocol.h */,
+				F85E04F919D94A0B00428DA4 /* IMNodeRenameProtocol.h */,
+				F85E04FA19D94A1900428DA4 /* IMNodeDeleteProtocol.h */,
+				F85E04FB19D94A2A00428DA4 /* IMNodeMoveProtocol.h */,
+				F85E04FC19D94A4600428DA4 /* IMNodeCopyProtocol.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F85E04E819D945C500428DA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F85E04F019D9489800428DA4 /* IMNode.h */,
+				F85E04F119D9489800428DA4 /* IMNode.m */,
+				F85E04F319D948CD00428DA4 /* IMFile.h */,
+				F85E04F419D948CD00428DA4 /* IMFile.m */,
+				F85E04F619D948E100428DA4 /* IMDirectory.h */,
+				F85E04F719D948E100428DA4 /* IMDirectory.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F85E04E919D945C500428DA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F85E04EA19D945C500428DA4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F85E049F19D9421600428DA4 /* IMFilesManager */ = {
+		F85E049F19D9421600428DA4 /* IMFilesManagerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F85E04C319D9421600428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManager" */;
+			buildConfigurationList = F85E04C319D9421600428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManagerDemo" */;
 			buildPhases = (
 				F85E049C19D9421600428DA4 /* Sources */,
 				F85E049D19D9421600428DA4 /* Frameworks */,
@@ -134,28 +219,27 @@
 			);
 			dependencies = (
 			);
-			name = IMFilesManager;
+			name = IMFilesManagerDemo;
 			productName = IMFilesManager;
 			productReference = F85E04A019D9421600428DA4 /* IMFilesManager.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F85E04B819D9421600428DA4 /* IMFilesManagerTests */ = {
+		F85E04D119D9458C00428DA4 /* IMFilesManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F85E04C619D9421600428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManagerTests" */;
+			buildConfigurationList = F85E04E019D9458C00428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManager" */;
 			buildPhases = (
-				F85E04B519D9421600428DA4 /* Sources */,
-				F85E04B619D9421600428DA4 /* Frameworks */,
-				F85E04B719D9421600428DA4 /* Resources */,
+				F85E04CE19D9458C00428DA4 /* Sources */,
+				F85E04CF19D9458C00428DA4 /* Frameworks */,
+				F85E04D019D9458C00428DA4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F85E04BB19D9421600428DA4 /* PBXTargetDependency */,
 			);
-			name = IMFilesManagerTests;
-			productName = IMFilesManagerTests;
-			productReference = F85E04B919D9421600428DA4 /* IMFilesManagerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = IMFilesManager;
+			productName = IMFilesManager;
+			productReference = F85E04D219D9458C00428DA4 /* libIMFilesManager.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -169,9 +253,8 @@
 					F85E049F19D9421600428DA4 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
-					F85E04B819D9421600428DA4 = {
+					F85E04D119D9458C00428DA4 = {
 						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = F85E049F19D9421600428DA4;
 					};
 				};
 			};
@@ -188,8 +271,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F85E049F19D9421600428DA4 /* IMFilesManager */,
-				F85E04B819D9421600428DA4 /* IMFilesManagerTests */,
+				F85E049F19D9421600428DA4 /* IMFilesManagerDemo */,
+				F85E04D119D9458C00428DA4 /* IMFilesManager */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +285,6 @@
 				F85E04AF19D9421600428DA4 /* Main.storyboard in Resources */,
 				F85E04B419D9421600428DA4 /* LaunchScreen.xib in Resources */,
 				F85E04B119D9421600428DA4 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F85E04B719D9421600428DA4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +301,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F85E04B519D9421600428DA4 /* Sources */ = {
+		F85E04CE19D9458C00428DA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85E04C019D9421600428DA4 /* IMFilesManagerTests.m in Sources */,
+				F85E04F519D948CD00428DA4 /* IMFile.m in Sources */,
+				F85E04D719D9458C00428DA4 /* IMFilesManager.m in Sources */,
+				F85E04F219D9489800428DA4 /* IMNode.m in Sources */,
+				F85E04F819D948E100428DA4 /* IMDirectory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F85E04BB19D9421600428DA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F85E049F19D9421600428DA4 /* IMFilesManager */;
-			targetProxy = F85E04BA19D9421600428DA4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F85E04AD19D9421600428DA4 /* Main.storyboard */ = {
@@ -361,37 +432,25 @@
 			};
 			name = Release;
 		};
-		F85E04C719D9421600428DA4 /* Debug */ = {
+		F85E04E119D9458C00428DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IMFilesManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMFilesManager.app/IMFilesManager";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		F85E04C819D9421600428DA4 /* Release */ = {
+		F85E04E219D9458C00428DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = IMFilesManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMFilesManager.app/IMFilesManager";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -407,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F85E04C319D9421600428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManager" */ = {
+		F85E04C319D9421600428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManagerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F85E04C419D9421600428DA4 /* Debug */,
@@ -415,11 +474,11 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		F85E04C619D9421600428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManagerTests" */ = {
+		F85E04E019D9458C00428DA4 /* Build configuration list for PBXNativeTarget "IMFilesManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F85E04C719D9421600428DA4 /* Debug */,
-				F85E04C819D9421600428DA4 /* Release */,
+				F85E04E119D9458C00428DA4 /* Debug */,
+				F85E04E219D9458C00428DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

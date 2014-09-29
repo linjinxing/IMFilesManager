@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F85E049F19D9421600428DA4"
-               BuildableName = "IMFilesManagerDemo.app"
-               BlueprintName = "IMFilesManagerDemo"
-               ReferencedContainer = "container:IMFilesManager.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F85E04B819D9421600428DA4"
-               BuildableName = "IMFilesManagerTests.xctest"
-               BlueprintName = "IMFilesManagerTests"
+               BlueprintIdentifier = "F85E04D119D9458C00428DA4"
+               BuildableName = "libIMFilesManager.a"
+               BlueprintName = "IMFilesManager"
                ReferencedContainer = "container:IMFilesManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F85E04B819D9421600428DA4"
-               BuildableName = "IMFilesManagerTests.xctest"
-               BlueprintName = "IMFilesManagerTests"
-               ReferencedContainer = "container:IMFilesManager.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F85E049F19D9421600428DA4"
-            BuildableName = "IMFilesManagerDemo.app"
-            BlueprintName = "IMFilesManagerDemo"
-            ReferencedContainer = "container:IMFilesManager.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -72,15 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F85E049F19D9421600428DA4"
-            BuildableName = "IMFilesManagerDemo.app"
-            BlueprintName = "IMFilesManagerDemo"
+            BlueprintIdentifier = "F85E04D119D9458C00428DA4"
+            BuildableName = "libIMFilesManager.a"
+            BlueprintName = "IMFilesManager"
             ReferencedContainer = "container:IMFilesManager.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +57,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F85E049F19D9421600428DA4"
-            BuildableName = "IMFilesManagerDemo.app"
-            BlueprintName = "IMFilesManagerDemo"
+            BlueprintIdentifier = "F85E04D119D9458C00428DA4"
+            BuildableName = "libIMFilesManager.a"
+            BlueprintName = "IMFilesManager"
             ReferencedContainer = "container:IMFilesManager.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
